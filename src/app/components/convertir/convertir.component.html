@@ -1,0 +1,24 @@
+<div class="contenedor">
+    <div class="contenido">
+        <h1>Conversor de monedas</h1>
+        <input (keyup.enter)="obtenerMonedas()" [(ngModel)]="cantidad" type="number" name="input" id="input">
+        <div class="row">
+            <div class="col">
+                <h4>Tengo:</h4>
+                <select [(ngModel)]="monedaPrincipal" class="col" name="tengo" id="tengo">
+                    <option *ngFor="let nombreMoneda of monedas">{{nombreMoneda}}</option>
+                </select>
+            </div>
+            <div class="col">
+                <h4>Quiero:</h4>
+                <select [(ngModel)]="monedaCambio" class="col" name="quiero" id="quiero">
+                    <option *ngFor="let nombreMoneda of monedas">{{nombreMoneda}}</option>
+                </select>
+            </div>
+        </div>
+        <div class="botonCalculo">
+            <button (click)="calcularEquivalencia(cantidad, monedaPrincipal, monedaCambio)">Convertir</button>
+        </div>
+        <p class="resultado" *ngIf="valor">{{valor}}</p>
+    </div>
+</div>

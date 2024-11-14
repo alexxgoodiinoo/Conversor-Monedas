@@ -1,0 +1,63 @@
+.contenedor{
+    background: lightblue;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor input{
+    border: none;
+}
+
+select{
+    border:none;
+    height: 40px;
+}
+
+.contenido{
+    margin-top: 25px;
+}
+
+.row{
+    margin-top: 15px;
+}
+
+input{
+    width: 1000px;
+    height: 40px;
+    border-radius: 5px;
+}
+h1{
+    text-align: center;
+}
+select{
+    width: 100%;
+    border-radius: 5px;
+}
+
+.botonCalculo{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.botonCalculo button{
+    width: 300px;
+    border-radius: 10px;
+    border: none;
+    color:white;
+    background: lightcoral;
+    padding: 10px;
+}
+
+.resultado{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-top: 25px;
+    border: 1px;
+    border-radius: 5px;
+}
